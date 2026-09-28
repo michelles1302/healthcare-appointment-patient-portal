@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologies — MediCare Portal</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar navbar-expand-lg navbar-medicare sticky-top">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-medicare" href="index.html">
+        <i class="bi bi-heart-pulse-fill"></i> MediCare Portal
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">Patient Registration</a></li>
+          <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+          <li class="nav-item"><a class="nav-link" href="health-information.html">Health Information</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="technologies.html">Technologies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Page banner ===== -->
+  <header class="page-banner">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-medicare mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Technologies</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-code-slash me-2"></i>Technologies</h1>
+      <p>What this project is built with, and what each technology is responsible for.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card card-medicare tech-card tech-html p-4 h-100">
+            <div class="card-icon-wrap"><i class="bi bi-filetype-html"></i></div>
+            <h2 class="h5">HTML5</h2>
+            <p class="text-muted-custom">Provides the structure and content of every page in this portal.</p>
+            <div>
+              <span class="tech-tag">Page structure</span>
+              <span class="tech-tag">Semantic elements</span>
+              <span class="tech-tag">Forms</span>
+              <span class="tech-tag">Input types</span>
+              <span class="tech-tag">Validation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-medicare tech-card tech-css p-4 h-100">
+            <div class="card-icon-wrap accent"><i class="bi bi-filetype-css"></i></div>
+            <h2 class="h5">CSS3</h2>
+            <p class="text-muted-custom">Handles the custom visual styling layered on top of Bootstrap, kept in one shared stylesheet.</p>
+            <div>
+              <span class="tech-tag">Custom styling</span>
+              <span class="tech-tag">Spacing</span>
+              <span class="tech-tag">Colors</span>
+              <span class="tech-tag">Responsive adjustments</span>
+              <span class="tech-tag">Transitions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-medicare tech-card tech-bootstrap p-4 h-100">
+            <div class="card-icon-wrap"><i class="bi bi-bootstrap-fill"></i></div>
+            <h2 class="h5">Bootstrap 5</h2>
+            <p class="text-muted-custom">The main framework this project is built on, providing layout and ready-made components.</p>
+            <div>
+              <span class="tech-tag">Responsive grid</span>
+              <span class="tech-tag">Navbar</span>
+              <span class="tech-tag">Cards</span>
+              <span class="tech-tag">Buttons</span>
+              <span class="tech-tag">Forms</span>
+              <span class="tech-tag">Tables</span>
+              <span class="tech-tag">Badges</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card card-medicare tech-card tech-js js-card p-4 h-100">
+            <div class="card-icon-wrap"><i class="bi bi-filetype-js"></i></div>
+            <h2 class="h5">JavaScript</h2>
+            <p class="text-muted-custom">
+              Used only minimally, for frontend interaction — it is not one of the primary technologies
+              specified for this project. It powers the registration form's demo submit/reset feedback
+              and highlights the active navigation link.
+            </p>
+            <div>
+              <span class="tech-tag">Form submit feedback</span>
+              <span class="tech-tag">Reset behavior</span>
+              <span class="tech-tag">Active nav state</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="disclaimer-box mt-5">
+        <i class="bi bi-info-circle me-2"></i>
+        This is a frontend-only project: no backend, database, or server-side language is used anywhere in this portal.
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer-medicare">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="footer-brand"><i class="bi bi-heart-pulse-fill"></i> MediCare Portal</div>
+          <p class="small mb-0">A frontend demonstration of a healthcare appointment and patient portal, built with HTML5, CSS3, and Bootstrap 5.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html">Home</a></li>
+            <li class="mb-2"><a href="registration.html">Patient Registration</a></li>
+            <li class="mb-2"><a href="appointments.html">Appointments</a></li>
+            <li class="mb-2"><a href="health-information.html">Health Information</a></li>
+            <li class="mb-2"><a href="services.html">Services</a></li>
+            <li class="mb-2"><a href="technologies.html">Technologies</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Built with</h5>
+          <p class="small mb-0">HTML5 &middot; CSS3 &middot; Bootstrap 5 &middot; Bootstrap Icons &middot; JavaScript (supporting interaction)</p>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex flex-column flex-sm-row justify-content-between footer-bottom">
+        <p class="mb-0">&copy; 2026 MediCare Portal. College demo project — not a real healthcare provider.</p>
+        <p class="mb-0">Frontend-only. No data is stored or transmitted.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
